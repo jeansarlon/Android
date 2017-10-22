@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context="com.example.jean.webservice.Login.AtvLogin">
+
+    <LinearLayout
+        style="@style/vert50InItem"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:id="@+id/imageView5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        style="@style/vert50InItem">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/login_et_bg"
+
+            android:layout_width="match_parent"
+            android:layout_height="60sp">
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_account"
+
+                android:id="@+id/ic_email" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/login"
+                android:hint="Email "
+                android:background="@drawable/bg_alpha0"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorGrey"
+                android:textColorHighlight="@color/colorGrey"
+                android:theme="@style/Login_ET"
+                android:textAlignment="textStart"
+                android:layout_above="@+id/senha"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:gravity="center"
+            android:background="@drawable/login_et_bg">
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_lock"
+
+                android:id="@+id/ic_password" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/senha"
+                android:hint="Senha"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorGrey"
+                android:textAlignment="textStart"
+                android:inputType="textPassword"
+                android:theme="@style/Login_ET"
+                android:background="@drawable/bg_alpha0"
+                android:layout_above="@+id/btn_loginVolley"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <Button
+            android:text="Esqueci minha senha!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:paddingRight="30sp"
+            android:layout_marginBottom="30sp"
+            android:id="@+id/bt_forgot"
+            android:background="@drawable/bg_alpha0"
+            android:textColor="@color/colorGrey"
+            android:textSize="12sp"
+            android:gravity="top|right" />
+
+
+        <Button
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_loginVolley"
+            android:textColor="#fff"
+            android:background="@drawable/login_bt_bg"
+            android:layout_above="@+id/bt_cadastro"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Ainda Não tem Uma conta?"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:id="@+id/bt_cadastro"
+            android:background="@drawable/bg_alpha0"
+            android:textColor="@color/colorGrey"
+            android:paddingTop="10sp"
+            android:textSize="12sp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:textColor="@color/colorGrey"
+            android:id="@+id/tvResultado"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

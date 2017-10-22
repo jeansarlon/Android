@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="16dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="60sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:gravity="center">
+
+        <EditText
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/party_name"
+            android:hint="Titulo"
+            android:textColorHint="#abb1c3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/party_birth_people"
+            android:hint="Aniversariante"
+            android:textColorHint="#abb1c3"
+
+            android:layout_below="@+id/party_name"
+             />
+
+        <EditText
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/party_date"
+            android:layout_weight="1"
+            android:hint="Data"
+            android:textColorHint="#abb1c3"
+            android:inputType="date"
+            android:layout_below="@+id/party_birth_people"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:minHeight="100sp"
+        android:id="@+id/relativeLayout"
+        android:gravity="center"
+        android:background="@drawable/sea400"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Cadastro de Festas"
+            android:textColor="#fff"
+            android:letterSpacing="0.025"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_regPartyTitle"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

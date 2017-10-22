@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary_2"
+        android:id="@+id/relativeLayout2"
+        android:gravity="center">
+
+        <TextView
+            android:text="Minhas festas"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:paddingBottom="1sp"
+        android:background="#e0dedf"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frameLayout">
+        <RelativeLayout
+            android:minHeight="75sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:textColor="#000"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/linearLayout8"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20sp">
+
+                <TextView
+                    android:text="42"
+                    android:textSize="32sp"
+                    android:textColor="@color/colorPrimary_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textVie95"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="Festas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/linearLayout2"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/linearLayout8"
+                android:layout_marginRight="20sp">
+
+                <TextView
+                    android:text="8400"
+                    android:textSize="32sp"
+                    android:textColor="@color/colorPrimary_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="Convidados"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/parties_list"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/frameLayout" />
+
+</RelativeLayout>

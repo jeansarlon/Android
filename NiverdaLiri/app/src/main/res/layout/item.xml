@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:id="@+id/item_lista"
+        android:gravity="center">
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/cbc"
+            android:checked="false"
+            android:button="@null"
+            android:background="?android:attr/listChoiceIndicatorMultiple"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:text="Large Text"
+                android:paddingLeft="5dp"
+                android:textSize="17dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tvNome" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:paddingLeft="5dp"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/tv_mesa" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
